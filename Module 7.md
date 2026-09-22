@@ -16,12 +16,31 @@ Else
  
 Program:
 
-//type your code here
+```
+#include<stdio.h> 
+struct eligible
+{
+int age; char n[4];
+};
+int main()
+{
+struct eligible; scanf("%d%s",&e.age,e.n);
+if(e.age<=6)
+{
+printf("Age:%d\nName:%svaccine:%d\neligibility:no",e.age,e.n,e.age);
+} 
+else
+{
+printf("Age:%d\nName:%svaccine:%d\neligibility:yes",e.age,e.n,e.age);
 
+}
+}
+```
 
 Output:
 
-//paste your output here
+<img width="627" height="137" alt="image" src="https://github.com/user-attachments/assets/44a34565-b305-43a5-926a-47330759bad8" />
+
 
 
 Result:
@@ -44,15 +63,26 @@ Algorithm:
  
 Program:
 
-//type your code here
+```
 
+#include<stdio.h>
+struct add
+{
+    int a,b;
+}n;
+int main()
+{
+    scanf("%d%d",&n.a,&n.b);
+    printf("%d",n.a+n.b);
+}
 
+```
 
 
 Output:
 
 
-//paste your output here
+<img width="456" height="425" alt="image" src="https://github.com/user-attachments/assets/176c3bf2-1c63-4c44-959a-e8f9f6ad5371" />
 
 
 
@@ -86,24 +116,26 @@ Use scanf to input the file name into the name array.
  
 Program:
 
-//type your code here
+```
+#include <stdio.h>
+int main()
+{
+    FILE *fp;
+    char a[20];
+    scanf("%s",a);
+    printf("%s File Created Successfully\n",a);
+    fp = fopen("a","w");
+    printf("%s File Opened\n",a);
+    fclose(fp);
+    printf("%s File Closed\n",a);
+}
 
-
-
+```
 
 Output:
 
 
-//paste your output here
-
-
-
-
-
-
-
-
-
+<img width="941" height="378" alt="image" src="https://github.com/user-attachments/assets/40510bdf-92e8-4886-92c4-5d413a984faa" />
 
 
 Result:
@@ -133,19 +165,32 @@ Use scanf to input the file name into the name array and the number of strings i
  
 Program:
 
-//type your code here
-
+```
+#include <stdio.h>
+int main()
+{
+    FILE *fp;
+    char name[30] , b[30];
+    int a;
+    scanf("%s",name);
+    scanf("%d",&a);
+    fp = fopen("name" , "w");
+    printf("%s Opened\n",name);
+    for(int i=0 ; i<a ; i++)
+    {
+        scanf("%s",b);
+        fputs(b,fp);
+    }
+    printf("Data added Successfully\n");
+}
+```
 
 
 
 Output:
 
 
-//paste your output here
-
-
-
-
+<img width="788" height="347" alt="image" src="https://github.com/user-attachments/assets/98a25441-6f1b-431a-b34c-5cd51c3556c9" />
 
 
 Result:
@@ -187,19 +232,29 @@ Algorithm:
 
 Program:
 
-//type your code here
+```
+#include<stdio.h>
+struct std{
+    char name[20];
+    int roll;
+    float per;
+}acc;
 
+int main(){
+    scanf("%d",&acc.roll);
+    scanf("%s",acc.name);
+    scanf("%f",&acc.per);
+    printf("Rollno is: %d\n",acc.roll);
+    printf("Name is: %s\n",acc.name);
+    printf("Percentage is: %.2f",acc.per);
+}
+```
 
 
 
 Output:
 
-
-//paste your output here
-
-
-
-
+<img width="788" height="347" alt="image" src="https://github.com/user-attachments/assets/57e3c145-0497-47b6-8b36-9aa0c4af0c0e" />
 
 
 Result:
